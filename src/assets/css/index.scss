@@ -1,0 +1,83 @@
+.container{
+	min-height:calc(100vh - 104px);
+	min-width:1200px;
+	background:url('../img/bg.jpg') no-repeat;
+	background-position: top center;
+	background-size: cover;
+	.main{
+		width:68.2vw;
+		max-width:1146px;
+		min-width: 1118px;
+		height:653px;
+		background:url('../img/con-bg.png') top center/100% 100% no-repeat;
+		.kuang{
+			background:url('../img/kuang-line.png') top center/100% 100% no-repeat;
+			width: 90%;
+			height: 86%;
+			margin: 16px auto;
+		}
+	}
+}
+.base-title{
+    background:url('../img/title-bg.png') left center/auto 100% no-repeat;
+}
+.mask{
+	width:100vw;
+	height:100vh;
+	background:rgba(0,0,0,.7);
+	position: fixed;
+	left:0;
+	top:0;
+	z-index:99;
+}
+
+@media screen and (max-height:758px){
+	.container{
+		min-height:653px;
+	}
+}
+@media screen and (min-height:758px){
+	.container{
+		align-items: center;
+	}
+}
+// @media screen and (min-width:3838px){
+// 	.main-out{
+// 		transform: scale(2);
+// 	}
+// }
+// element样式修改
+// 分页器
+.el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li{
+	background-color: inherit;
+	border:1px solid #0b8066;
+	color:#19442a;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+	background-color:#0b8066;
+}
+.el-pagination .btn-next .el-icon, .el-pagination .btn-prev .el-icon{
+	color:#19442a;
+}
+.el-pagination.is-background .el-pager li:not(.disabled):hover{
+	color:#19442a;
+}
+// 多选框
+.el-checkbox__input.is-checked+.el-checkbox__label{
+	color: #0b8066;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+	background-color: #0b8066;
+    border-color: #0b8066;
+}
+.el-checkbox__inner:hover{
+	border-color:#0b8066;
+}
+// 下拉选择
+.el-dropdown-menu{
+	max-height: 300px;
+    overflow: auto;
+}
+.el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover{
+	color: #0b8066;
+}
